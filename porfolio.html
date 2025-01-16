@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Work+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            background-image: linear-gradient(to top, #888492 0%, #fbc2eb 100%);
+            font-family: "Work Sans", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            background-color: #133761;
+            justify-content: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+            top: 0;
+            box-shadow: 0 0 10px 5px black;
+            b
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li a {
+            font-size: 16px;
+            padding: 15px;
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        nav ul li a:hover {
+            color: #483D8B;
+        }
+
+        h1, h2, h3 {
+            font-family: "Days One", sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .hero {
+            padding-top: 130px; /* Adjust for navbar height */
+            text-align: center;
+            
+        }
+
+        .hero img {
+            border-radius: 50%;
+            width: 400px;
+            height: 400px;
+            border: 10px solid #090609; /* Initial border color */
+    transition: border-color 0.3s ease; /* Smooth transition on hover */
+
+            
+        }
+
+        h1 {
+            color: black;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+
+    
+
+        section {
+            margin-top: 100px;
+            justify-content: center;
+            display: flex;
+        }
+
+        .aboutme {
+            background-color: white;
+            padding: 40px;
+            margin: 0 auto;
+            margin-top: 50px;
+            box-shadow: 0 0 10px 5px black;
+            border-radius: 8px;
+            width: 90%;
+            text-align: center;
+            flex-direction: column; /* Align the children vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center the text */
+        }
+
+        h2{
+
+
+            margin-top: 0;
+        }
+
+        .aboutme-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .left-image {
+            background-image: url("emre.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+
+            
+        }
+
+        #projects {
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            padding: 10px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .projects {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        h2 {
+
+
+        border-style: ridge;
+        border-color: #090609;
+        padding: 10px 10px;
+        }
+
+        .turkish-cuisine, .bbc-news {
+            width: 400px;
+            height: 400px;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .turkish-cuisine {
+            background-image: url("simit.JPEG.JPEG");
+        }
+
+        .bbc-news {
+            background-image: url("bbc.news.PNG");
+        }
+
+        .text {
+            position: absolute;
+            height: 65px;
+            width: 100%;
+            left: 0%;
+            bottom: 0;
+            z-index: 2;
+            background-color: white;
+            overflow: hidden;
+            transition: 0.2s;
+            padding: 10px;
+            box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.3);
+            
+        }
+
+        .text:hover {
+            height: 175px;
+            transition: 0.3s;
+        }
+
+        .text h3 {
+            margin: 5px 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .text p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .button {
+    display: inline-block; /* Make it behave like a box with text inside */
+    text-align: center; /* Centers the text */
+    padding: 10px 20px; /* Adds padding around the text */
+    background-color: #8B0000; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* Removes default borders */
+    border-radius: 10px; /* This applies the rounded corners */
+    font-size: 16px; /* Size of the text */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+    text-decoration: none; /* Removes underline from link */
+    
+}
+
+.button:hover {
+    background-color: #483D8B; /* Changes color when hovered */
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <img src="img for portfolio.jpg" alt="Emre's Portfolio Image">
+            <h1>I'm Emre, this is my first project</h1>
+        </div>
+    </section>
+
+    <section id="aboutme" class="aboutme">
+        <h2>About Me</h2>
+        <div class="aboutme-section">
+            <div class="left-image"></div>
+            <div class="aboutme-text">
+                <p>
+                    Hi, I decided to make my own website so that I can use this project as a reputation.
+                    Coding your website can be tricky at times, but once you learn the basics, it will come naturally to you.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <!-- Turkish Cuisine Project -->
+            <div class="turkish-cuisine">
+                <div class="text">
+                    <h3>Turkish Cuisine</h3>
+                    <p>Explore the rich flavors of Turkey, including Simit, Baklava, and more!</p>
+                    <a class="button" href="file:///C:/Users/emre_/OneDrive/Bureaublad/project%20HTML/mywebpage.html" target="_bank">view project</a>
+                </div>
+            </div>
+
+            <!-- BBC News Project -->
+            <div class="bbc-news">
+                <div class="text">
+                    <h3>BBC News</h3>
+                    <p>Stay updated with the latest global news from BBC.</p>
+                    <a class="button" href="https://www.bbc.com/news" target="_bank">Visit BBC News Page</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
